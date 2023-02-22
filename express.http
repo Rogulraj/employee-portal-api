@@ -1,0 +1,30 @@
+POST http://localhost:3030/api/signup/authentication/userdetails
+Content-Type: application/json
+
+{
+    "email": "rogulraj123@gmail.com",
+    "username": "Rogulraj SR",
+    "companyName": "Rogul Tex",
+    "dob": "13/02/2001",
+    "age": 20, 
+    "password": "rogulXXXXX"
+}
+###
+
+POST http://localhost:3030/api/authentication/signin
+Content-Type: application/json
+
+{
+    "username": "Rogulraj SR",
+    "password": "rogulXXXX"
+}
+###
+
+GET http://localhost:3030/
+###
+
+GET http://localhost:3030/api/get/specific-user 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlJvZ3VscmFqIiwiaWF0IjoxNjc3MDM4NDM0fQ.nKAbjenBEo9cA-v8g0LQQ03FitghSU6xnf304iHYo1I
+###
+DELETE http://localhost:3030/api/delete/account
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlJvZ3VscmFqIiwiaWF0IjoxNjc3MDM4NDM0fQ.nKAbjenBEo9cA-v8g0LQQ03FitghSU6xnf304iHYo1I
