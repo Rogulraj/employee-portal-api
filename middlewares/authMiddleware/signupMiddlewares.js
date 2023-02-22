@@ -110,7 +110,7 @@ const verificationMail = async (request, response, next) => {
       from: "verifyuserdetails@gmail.com",
       to: email,
       subject: "Please verify your account",
-      text: "we are very happy to see you in our team, click the link and login to your account LINK - http://localhost:3004/verify-user",
+      text: "we are very happy to see you in our team, click the link and login to your account LINK - https://63f5f7032da12777ec67cc94--resilient-shortbread-18cf8d.netlify.app/verify-user",
     };
 
     transpoter.sendMail(mailOption, async (error, info) => {
